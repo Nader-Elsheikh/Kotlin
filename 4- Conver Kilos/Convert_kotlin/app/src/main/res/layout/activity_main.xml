@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/activity_main_scene">
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="91dp"
+        android:text="0"
+        android:textAlignment="center"
+android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b1" />
+
+    <EditText
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_marginTop="179dp"
+        android:layout_marginBottom="126dp"
+        android:hint="Enter the unit in Pound"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="30dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/b1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="194dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="78dp"
+        android:background="@color/purple_500"
+        android:text="Convert"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:theme="@style/Theme.AppCompat.Light"
+        app:layout_constraintBottom_toTopOf="@+id/t2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

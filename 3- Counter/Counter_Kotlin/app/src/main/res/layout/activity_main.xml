@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    app:layoutDescription="@xml/activity_main_scene2">
+
+    <TextView
+        android:id="@+id/T1"
+        android:layout_width="81dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="89dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/B1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/B1"
+        android:layout_width="126dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="90dp"
+        android:background="@color/white"
+        android:text="Click Me"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/R"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/T1"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/R"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="133dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/B1"
+        app:layout_constraintTop_toBottomOf="@+id/B1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
